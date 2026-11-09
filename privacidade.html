@@ -14,13 +14,13 @@
 <header class="site">
   <a class="brand" href="./"><img src="icon.png" alt="">Sektor</a>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 26 October 2026</p>
+  <p class="updated">Last updated: 6 November 2026</p>
 </header>
 
 <p class="lead">Sektor is a lap timing and telemetry app for karting, for iPhone and Android. This page says plainly what data it collects, why, where it goes and how you delete it. Where the two versions differ, the page says which is which.</p>
 
 <div class="box">
-  <p><strong>The essentials in three lines.</strong> The app does no advertising tracking, does not use the advertising identifier and has no analytics SDK. Nothing it collects is sold, shared with advertisers or linked to third-party data. When you are signed in, your sessions are stored on the server; what other people see of you is only what you switch on.</p>
+  <p><strong>The essentials in three lines.</strong> The app does no advertising tracking, does not use the advertising identifier and has no analytics SDK. Nothing it collects is sold, shared with advertisers or linked to third-party data. When you are signed in, your session summaries and laps are stored on the server, and the GPS data only of the sessions you unlock; what other people see of you is only what you switch on.</p>
 </div>
 
 <h2>Who is responsible</h2>
@@ -38,7 +38,7 @@
     <tr><td>GPS positions from sessions</td><td>When you import a recording</td><td>To detect laps, calculate speeds and draw the racing line</td></tr>
     <tr><td>Device location</td><td>While the app is open, if you allow it</td><td>To show where you are and suggest the nearest track</td></tr>
     <tr><td>Content you create</td><td>As you use the app</td><td>Sessions, laps, tracks, races, championships, results, kart notes and video chapters</td></tr>
-    <tr><td>Purchases</td><td>If you buy something</td><td>To know what is unlocked on your account</td></tr>
+    <tr><td>Purchases</td><td>If you buy something</td><td>To know your credits and what is unlocked on your account</td></tr>
     <tr><td>Device identifier for notifications</td><td>If you allow notifications</td><td>To deliver notices about invitations, shares, entries and purchases</td></tr>
     <tr><td>Blocks and reports</td><td>If you block or report someone</td><td>So you stop seeing each other; to review abusive behaviour</td></tr>
   </tbody>
@@ -60,21 +60,21 @@
 <p>If you refuse location permission, the app still works: you pick the track from a list.</p>
 
 <h2>Where the data is kept</h2>
-<p><strong>First, on your phone.</strong> Sessions, laps, telemetry, tracks, karts, pilots and races are stored on the device, and that is where the app reads them from. Importing and analysing work with no network.</p>
-<p><strong>On the server, your copy.</strong> Sektor needs an account to work, because comparing yourself with other pilots, leaderboards, races and groups cannot exist without knowing who is who. When you are signed in, your sessions, laps, tracks, races and telemetry are copied to the server, so you have them on another device and do not lose them if you lose your phone. On the free plan the copy covers a limited number of sessions; the rest stay only on the device.</p>
-<p><strong>Videos never leave the device.</strong> The app keeps a copy or just a reference to the file, as you choose, and never sends it to the server.</p>
+<p><strong>First, on your phone.</strong> Sessions, laps, telemetry, tracks, karts, pilots and races are stored on the device, and that is where the app reads them from. Importing and analysing work with no network. The GPS positions of a session you have not unlocked stay only on the phone and do not go to the server. If you lose the phone you lose them, unless you still have the original file, which you can import again.</p>
+<p><strong>On the server, your copy.</strong> Sektor needs an account to work, because comparing yourself with other pilots, leaderboards, races and groups cannot exist without knowing who is who. When you are signed in, the summaries and laps of your sessions, your tracks and your races are copied to the server, so you have them on another device and do not lose them if you lose your phone. A session's GPS telemetry is copied only if you unlock the session.</p>
+<p><strong>Video files never leave the device.</strong> The app keeps a copy or just a reference to the file, as you choose, and never uploads it. What does reach the server is each video's start time and duration, so it lines up with the telemetry on another device, and a share link, if you paste one on a session yourself; whoever can see that session can see them.</p>
 <p>On Android, the app does not back up its data to Google automatically: whatever is only on the device is lost if you delete the app or change devices.</p>
 
 <h2>What other people can see</h2>
 <p>None of the following happens unless you switch it on:</p>
 <ul>
-  <li><strong>Leaderboards</strong> — if you enter a pilot name, your best lap at each official track and kart class goes on a public leaderboard, with that name and the date, visible to anyone with an account. Removing the name withdraws your times. Telemetry is never published.</li>
+  <li><strong>Leaderboards</strong> — if you enter a pilot name, your best lap at each official track and kart class goes on a public leaderboard, with that name, the date and the source of the session (such as GoPro or RaceBox), visible to anyone with an account. Removing the name withdraws your times. Telemetry is never published.</li>
   <li><strong>Friends</strong> — friend requests, your invitation code and the name friends see you by are kept on the server. Whoever uses your code learns your name and sends you a request; you are only connected if you accept.</li>
   <li><strong>Profile photo</strong> — only if you choose one. Your friends see it, and so do the people in a race or championship with you; never anyone you have blocked or who has blocked you, and never on the public leaderboard. Removing the photo deletes it from the server.</li>
   <li><strong>Where you've been</strong> — off by default. When on, your friends see which catalogue track you were at and at what time. It does not include your route, times or telemetry.</li>
-  <li><strong>Shared sessions</strong> — one at a time, with a friend you have already accepted. You can withdraw the share at any time, and so can they.</li>
-  <li><strong>Invitation-only races and championships</strong> — whoever joins by invitation sees the race, the results and the telemetry of the sessions each person attached to it. Leaving revokes access to the telemetry; the times stay in the event's record. The admin can also invite a friend to a named driver on the event's grid; it is only linked to that person's account if they accept, and they then join the group as if they had used the code.</li>
-  <li><strong>Official track catalogue</strong> — your votes on track layouts are linked to your account and only you see them; the total for each layout is public. If you propose a track, its start/finish line, sectors, number of sessions and laps and your best lap are visible to anyone with an account, linked to your profile.</li>
+  <li><strong>Shared sessions</strong> — one at a time, with a friend you have already accepted. A session you have not unlocked shares its summary and laps; an unlocked one also shares its telemetry, which your friend opens with a credit of their own. You can withdraw the share at any time, and so can they.</li>
+  <li><strong>Invitation-only races and championships</strong> — whoever joins by invitation sees the race and the results. Telemetry is seen only by those with an unlocked session of their own in that race, and only from the others who unlocked theirs. Leaving revokes access to the telemetry; the times stay in the event's record. The admin can also invite a friend to a named driver on the event's grid; it is only linked to that person's account if they accept, and they then join the group as if they had used the code.</li>
+  <li><strong>Official track catalogue</strong> — your votes on track layouts are linked to your account and only you see them; the total for each layout is public. If you propose a track, its start/finish line, sectors, length, direction, width and outline on the map, the number of sessions and laps, your best lap and the date of the proposal are visible to anyone with an account, linked to your profile.</li>
 </ul>
 
 <h2>Who it is shared with</h2>
@@ -83,31 +83,31 @@
 <table>
   <thead><tr><th>Service</th><th>What for</th><th>What it sees</th></tr></thead>
   <tbody>
-    <tr><td><strong>Supabase</strong></td><td>Accounts and server (both apps)</td><td>Email, account identifier, and the content described above. Hosted in the European Union.</td></tr>
-    <tr><td><strong>RevenueCat</strong></td><td>Purchase management (both apps)</td><td>Your account identifier, the purchases linked to it and what any network request carries, such as the IP address. Never payment details.</td></tr>
+    <tr><td><strong>Supabase</strong></td><td>Accounts and server (both apps)</td><td>Email, account identifier, and the content described above. Hosted in the United Kingdom (London). The UK is outside the EU, and the European Commission has recognised that it protects personal data adequately.</td></tr>
+    <tr><td><strong>RevenueCat</strong></td><td>Purchase management (both apps)</td><td>Your account identifier, the purchases linked to it and what any network request carries, such as the IP address. Never payment details. RevenueCat is based in the United States, so this may be processed there. The safeguards for that transfer are available on request, at the contact above.</td></tr>
     <tr><td><strong>Apple</strong></td><td>On iPhone: store, notifications, sign-in, maps and place search</td><td>Payments are processed entirely by Apple; the app never sees your card.</td></tr>
     <tr><td><strong>Google</strong></td><td>On Android: store (Google Play) and notifications (Firebase Cloud Messaging)</td><td>Payments are processed entirely by Google Play; the app never sees your card. For notifications, this device's identifier and your account's.</td></tr>
     <tr><td><strong>OpenFreeMap</strong></td><td>On Android: map images</td><td>The area of the map you are looking at and the request's IP address.</td></tr>
     <tr><td><strong>Photon (komoot)</strong></td><td>On Android: searching for tracks by name</td><td>The text you search for and, if the app has it, your position, to show results near you first.</td></tr>
-    <tr><td><strong>OpenStreetMap (Overpass)</strong></td><td>The shape of track layouts</td><td>Only the coordinate of a track's start/finish line — never your sessions, laps or your name. On iPhone, when you propose a track to the catalogue; on Android, also from time to time for each of your tracks, to draw the 3D view.</td></tr>
+    <tr><td><strong>OpenStreetMap (Overpass)</strong></td><td>The shape of track layouts</td><td>Only the coordinate of a track's start/finish line, the request's IP address and the app's name — never your sessions, laps or account. From time to time, for each of your tracks that has a start/finish line and at least two laps, to draw the 3D view; on iPhone, also when you propose a track to the catalogue.</td></tr>
   </tbody>
 </table>
 </div>
 
 <h2>When you write to support</h2>
-<p>In Account → Help and contact, or when an import fails, the app opens a pre-filled email and you are the one who sends it. It carries what you see in it: the app version, the device model, the language, the plan and, if you attach them, the files that did not open. A telemetry file contains the session's GPS positions and times.</p>
+<p>In Account → Help and contact, or when an import fails, the app opens a pre-filled email and you are the one who sends it. It carries what you see in it, such as the app version, the device model and the language, and, if you attach them, the files that did not open. A telemetry file contains the session's GPS positions and times.</p>
 <p>We use what you send us only to reply to you and to make the app read that format. The files are deleted once the matter is resolved; the email stays in the mailbox, like any conversation, and you can ask us to delete it.</p>
 
 <h2>How long it is kept</h2>
-<p>For as long as you have an account. Data kept only on the phone disappears when you uninstall the app. Data on the server is deleted when you delete your account, with the exceptions described in <a href="apagar-conta.html">Delete your account</a>.</p>
+<p>For as long as you have an account and the service exists. If it ever ends, we tell you in advance and give you a way to export your data. Data kept only on the phone disappears when you uninstall the app. Data on the server is deleted when you delete your account, with the exceptions described in <a href="apagar-conta.html">Delete your account</a>.</p>
 
 <h2>Your rights</h2>
 <p>Under the GDPR you may at any time:</p>
 <ul>
   <li><strong>Delete your account and what belongs to it</strong> — inside the app, in Account → your name → Delete account, or by email if you no longer have the app. It is permanent. The steps and what is deleted are in <a href="apagar-conta.html">Delete your account</a>.</li>
   <li><strong>Withdraw what you have shared</strong> — each share in the list above is switched off separately, without affecting the others.</li>
-  <li><strong>Block and report other users</strong> — from any public profile, leaderboard row or friend request. Whoever you block stops appearing on your leaderboards and can no longer send you friend requests; the person reported does not learn who reported them.</li>
-  <li><strong>Request access, correction or portability</strong> of your data, by writing to the contact above. Each session can also be exported from the app as GPX or CSV.</li>
+  <li><strong>Block and report other users</strong> — from any public profile (tap a name on a leaderboard to open it) or friend request. Whoever you block stops appearing on your leaderboards and can no longer send you friend requests; the person reported does not learn who reported them.</li>
+  <li><strong>Request access, correction or portability</strong> of your data, by writing to the contact above. Each session can also be exported from the app as GPX or CSV while its GPS data is on the device.</li>
   <li><strong>Lodge a complaint</strong> with the Portuguese data protection authority, the Comissão Nacional de Proteção de Dados (CNPD), if you believe your data has not been handled properly.</li>
 </ul>
 
@@ -118,7 +118,7 @@
 <p>All communication with the server is encrypted in transit. On the server, each account can reach only its own rows and those shared with it — the separation is enforced by the database, not just by the app. Passwords are never stored in plain text.</p>
 
 <h2>Changes to this policy</h2>
-<p>If this policy changes significantly, the date at the top is updated and the change is announced in the app. The version in force is always the one on this page.</p>
+<p>If this policy changes, the date at the top is updated; if the change is significant, we let you know by email or in the app. The version in force is always the one on this page.</p>
 
 <footer class="site">
   <a href="./">Home</a>
