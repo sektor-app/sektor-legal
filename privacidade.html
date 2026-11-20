@@ -14,7 +14,7 @@
 <header class="site">
   <a class="brand" href="./"><img src="icon.png" alt="">Sektor</a>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 11 November 2026</p>
+  <p class="updated">Last updated: 20 November 2026</p>
 </header>
 
 <p class="lead">Sektor is a lap timing and telemetry app for karting, for iPhone and Android. This page says plainly what data it collects, why, where it goes and how you delete it. Where the two versions differ, the page says which is which.</p>
@@ -24,7 +24,7 @@
 </div>
 
 <h2>Who is responsible</h2>
-<p>The data controller is the author of the Sektor app. For any question about this policy or about your data, write to <a href="mailto:hello.sektor.app@gmail.com">hello.sektor.app@gmail.com</a>.</p>
+<p>The data controller is Filipe Costa. For any question about this policy or about your data, write to <a href="mailto:hello.sektor.app@gmail.com">hello.sektor.app@gmail.com</a>.</p>
 
 <h2>What data is collected</h2>
 <div class="wide">
@@ -39,6 +39,7 @@
     <tr><td>Device location</td><td>While the app is open, if you allow it</td><td>To show where you are and suggest the nearest track</td></tr>
     <tr><td>Content you create</td><td>As you use the app</td><td>Sessions, laps, tracks, races, championships, results, kart notes and video chapters</td></tr>
     <tr><td>Purchases</td><td>If you buy something</td><td>To know your credits and what is unlocked on your account</td></tr>
+    <tr><td>Origin note of each session</td><td>When a session is first uploaded</td><td>To unlock the parts of a paid recording only when they really come from it</td></tr>
     <tr><td>Device identifier for notifications</td><td>If you allow notifications</td><td>To deliver notices about invitations, shares, entries and purchases</td></tr>
     <tr><td>Blocks and reports</td><td>If you block or report someone</td><td>So you stop seeing each other; to review abusive behaviour</td></tr>
   </tbody>
@@ -51,6 +52,9 @@
 <p>You can choose to hide your email. In that case Apple provides a private relay address, and that is the one stored — your real email never reaches us.</p>
 <p>If Apple shares your name, it becomes your pilot name to start with, and you can change it in Account. Your email address is never used as the name, whether you hide it or not: if Apple shares no name, the account starts without one until you enter it.</p>
 
+<h3>If you sign in with Google</h3>
+<p>You can choose to sign in with Google. Google then gives us your email address, the name and profile picture of your Google account, and its account identifier; our sign-in service stores them with your account. The name becomes your pilot name to start with, and you can change it in Account. Google learns that you signed in to Sektor. Sektor does not use your Google data for advertising.</p>
+
 <h2>Location, in detail</h2>
 <p>It is the most sensitive data the app touches, so it gets a section of its own.</p>
 <ul>
@@ -59,12 +63,14 @@
   <li><strong>Never in the background</strong> and never with the screen locked. The app does not ask for permanent location permission.</li>
 </ul>
 <p>If you refuse location permission, the app still works: you pick the track from a list.</p>
+<p>When you download from a GoPro, the app uses Bluetooth and the camera's Wi-Fi network, only after you tap Connect; nothing leaves the phone. On Android 10 and 11, the system asks for location permission to scan for Bluetooth devices, and it is used for that only.</p>
 
 <h2>Where the data is kept</h2>
 <p><strong>First, on your phone.</strong> Sessions, laps, telemetry, tracks, karts, pilots and races are stored on the device, and that is where the app reads them from. Importing and analysing work with no network. The GPS positions of a session you have not unlocked stay only on the phone and do not go to the server. If you lose the phone you lose them, unless you still have the original file, which you can import again.</p>
 <p><strong>On the server, your copy.</strong> Sektor needs an account to work, because comparing yourself with other pilots, leaderboards, races and groups cannot exist without knowing who is who. When you are signed in, the summaries and laps of your sessions, your tracks and your races are copied to the server, so you have them on another device and do not lose them if you lose your phone. A session's GPS telemetry is copied only if you unlock the session.</p>
+<p>For each session, the server keeps a note of how it first arrived: as a recording or as a part split from a recording, with the recording's date and length. It is used to decide which parts of a paid recording are unlocked with it, it does not change afterwards, and it stays even if you delete the session; it is deleted with your account.</p>
 <p><strong>Video files never leave the device.</strong> The app keeps a copy or just a reference to the file, as you choose, and never uploads it. What does reach the server is each video's start time and duration, so it lines up with the telemetry on another device, and a share link, if you paste one on a session yourself; whoever can see that session can see them.</p>
-<p>On Android, the app does not back up its data to Google automatically: whatever is only on the device is lost if you delete the app or change devices.</p>
+<p>On iPhone, the device backup (iCloud or a computer) includes the app's data, like any other app's, except copied videos. On Android, the app does not back up its data to Google automatically: whatever is only on the device is lost if you delete the app or change devices.</p>
 
 <h2>What other people can see</h2>
 <p>None of the following happens unless you switch it on:</p>
@@ -85,12 +91,14 @@
   <thead><tr><th>Service</th><th>What for</th><th>What it sees</th></tr></thead>
   <tbody>
     <tr><td><strong>Supabase</strong></td><td>Accounts and server (both apps)</td><td>Email, account identifier, and the content described above. Hosted in the United Kingdom (London). The UK is outside the EU, and the European Commission has recognised that it protects personal data adequately.</td></tr>
-    <tr><td><strong>RevenueCat</strong></td><td>Purchase management (both apps)</td><td>Your account identifier, the purchases linked to it and what any network request carries, such as the IP address. Never payment details. RevenueCat is based in the United States, so this may be processed there. The safeguards for that transfer are available on request, at the contact above.</td></tr>
-    <tr><td><strong>Apple</strong></td><td>On iPhone: store, notifications, sign-in, maps and place search</td><td>Payments are processed entirely by Apple; the app never sees your card.</td></tr>
-    <tr><td><strong>Google</strong></td><td>On Android: store (Google Play) and notifications (Firebase Cloud Messaging)</td><td>Payments are processed entirely by Google Play; the app never sees your card. For notifications, this device's identifier and your account's.</td></tr>
+    <tr><td><strong>RevenueCat</strong></td><td>Purchase management (both apps)</td><td>Your account identifier, the purchases linked to it and what any network request carries, such as the IP address. Never payment details. RevenueCat is based in the United States, so this may be processed there. The transfer is covered by the European Commission's standard contractual clauses and, for the United Kingdom, the UK International Data Transfer Addendum, both part of RevenueCat's <a href="https://www.revenuecat.com/dpa/" rel="noopener">data processing addendum</a>. For a copy or any question about these safeguards, write to the contact above.</td></tr>
+    <tr><td><strong>Apple</strong></td><td>On iPhone: store, notifications, sign-in, maps and place search</td><td>Payments are processed entirely by Apple; the app never sees your card. When you delete an account that signed in with Apple, a one-time code to disconnect Sektor from your Apple Account.</td></tr>
+    <tr><td><strong>Google</strong></td><td>Sign-in (both apps); on Android, also store (Google Play) and notifications (Firebase Cloud Messaging)</td><td>If you sign in with Google, that you signed in to Sektor. Payments are processed entirely by Google Play; the app never sees your card. For notifications, this device's identifier and your account's.</td></tr>
+    <tr><td><strong>Google (Gmail)</strong></td><td>Sending the account emails: confirmation codes and links, and password recovery</td><td>Your email address and the content of those emails.</td></tr>
     <tr><td><strong>OpenFreeMap</strong></td><td>On Android: map images</td><td>The area of the map you are looking at and the request's IP address.</td></tr>
-    <tr><td><strong>Photon (komoot)</strong></td><td>On Android: searching for tracks by name</td><td>The text you search for and, if the app has it, your position, to show results near you first.</td></tr>
+    <tr><td><strong>Photon (komoot)</strong></td><td>On Android: searching for tracks by name</td><td>The text you search for and, if the app has it, your approximate position (rounded to about 1 km), to show results near you first.</td></tr>
     <tr><td><strong>OpenStreetMap (Overpass)</strong></td><td>The shape of track layouts</td><td>Only the coordinate of a track's start/finish line, the request's IP address and the app's name — never your sessions, laps or account. From time to time, for each of your tracks that has a start/finish line and at least two laps, to draw the 3D view; on iPhone, also when you propose a track to the catalogue.</td></tr>
+    <tr><td><strong>GitHub</strong></td><td>Storing the encrypted database backup (we hold the key) and hosting this website</td><td>The backup is encrypted before it leaves; GitHub cannot read it. For the website, the IP address of the request.</td></tr>
   </tbody>
 </table>
 </div>
@@ -100,12 +108,12 @@
 <p>We use what you send us only to reply to you and to make the app read that format. The files are deleted once the matter is resolved; the email stays in the mailbox, like any conversation, and you can ask us to delete it.</p>
 
 <h2>How long it is kept</h2>
-<p>For as long as you have an account and the service exists. If it ever ends, we tell you in advance and give you a way to export your data. Data kept only on the phone disappears when you uninstall the app. Data on the server is deleted when you delete your account, with the exceptions described in <a href="apagar-conta.html">Delete your account</a>.</p>
+<p>For as long as you have an account and the service exists. If it ever ends, we tell you in advance and give you a way to export your data. Data kept only on the phone disappears when you uninstall the app. Data on our server is deleted when you delete your account, with the exceptions described in <a href="apagar-conta.html">Delete your account</a>. We keep an encrypted backup of the server's database for up to 90 days: your data leaves the live server straight away and disappears from the backups when they expire. The purchase record at RevenueCat is deleted on request.</p>
 
 <h2>Your rights</h2>
 <p>Under the GDPR you may at any time:</p>
 <ul>
-  <li><strong>Delete your account and what belongs to it</strong> — inside the app, in Account → your name → Delete account, or by email if you no longer have the app. It is permanent. The steps and what is deleted are in <a href="apagar-conta.html">Delete your account</a>.</li>
+  <li><strong>Delete your account and what belongs to it</strong> — inside the app, in Account → your name → Delete account, or by email if you no longer have the app. It cannot be undone; an encrypted backup of the database is kept for up to 90 days, and your data disappears from it when it expires. The steps and what is deleted are in <a href="apagar-conta.html">Delete your account</a>.</li>
   <li><strong>Withdraw what you have shared</strong> — each share in the list above is switched off separately, without affecting the others.</li>
   <li><strong>Block and report other users</strong> — from any public profile (tap a name on a leaderboard to open it) or friend request. Whoever you block stops appearing on your leaderboards and can no longer send you friend requests; the person reported does not learn who reported them.</li>
   <li><strong>Request access, correction or portability</strong> of your data, by writing to the contact above. Each session can also be exported from the app as GPX or CSV while its GPS data is on the device.</li>
